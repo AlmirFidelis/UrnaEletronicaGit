@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    font: normal 15pt Arial;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: grey;
+    text-align: center;
+}
+
+.cabecalho {
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.502);
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    color: #ffff;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+}
+
+.maquina {
+    position: relative;
+    background: #fff;
+    width: 807px;
+    height: 450px;
+    border-radius: 10px;
+    left: 50vw;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.tela {
+    color:#242933;
+    position: absolute;
+    background: linear-gradient(45deg, white, rgb(218, 219, 219));
+    width: 500px;
+    height: 400px;
+    border: 1px solid rgb(196, 193, 193);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.painel {
+    position: absolute;
+    width: 250px;
+    height: 330px;
+    background: rgb(49, 49, 49);
+    margin-top: -3px;
+    margin-left: 518px;
+    border-radius: 10px;
+}
+
+.info-Text {
+    position: absolute;
+    width: 95%;
+    text-align: left;
+    align-self: flex-start;
+    left: 10px;
+    bottom: 10px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: -160px;
+    width: 250px;
+    height: 100px;
+}
+
+.logofrb {
+    width: 50px;
+    height: 50px;
+    margin-top: 91px;
+    margin-left: 534px;
+}
+
+.logomsg {
+    color: rgb(44, 44, 44);
+    margin-left: 650px;
+    margin-top: -63px;
+}
+
+.numero {
+    background-color: #242933;
+    color: #fff;
+    margin-top: 20px;
+    border:2px solid #000;
+    width: 50px;
+    height: 45px;
+    box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
+}
+
+.numero:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+#branco {
+    background: white;
+    margin-top: 50px;
+    border: none;
+    width: 70px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
+}
+#branco:hover {
+    background: #c5c5c5;
+    cursor: pointer;
+}
+
+#corrige {
+    background: #ff4500;
+    margin-top: 15px;
+    border: none;
+    width: 70px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
+}
+#corrige:hover {
+    background: #c93926;
+    cursor: pointer;
+}
+
+#confirma {
+    background: rgb(25, 172, 81);
+    margin-top: 10px;
+    border: none;
+    width: 80px;
+    height: 60px;
+    box-shadow: 5px 5px 5px rgb(6, 7, 8);
+    border-radius: 10px;
+}
+#confirma:hover {
+    background: rgb(7, 114, 43);
+    cursor: pointer;
+}
+
+/* Tela de Exibição ////////////////////////////////////////////*/
+.telainicial {
+    position: absolute;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.text-presidente {
+    margin-top: 70px;
+    color: #242933;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.digito1, .digito2, .res1, .res2 {
+    background: none;
+    margin-top: 20px ;
+    text-align: center;
+    width: 30px;
+    font-size: 25pt;
+    animation: piscar 1000ms linear infinite;
+    border: 1px solid;
+}
+
+.digitado1 {
+    position: absolute;
+    background: none;
+    margin-left: 194px;
+    margin-top: -20px;
+    text-align: center;
+    width: 30px;
+    font-size: 25pt;
+    border: 1px solid;
+}
+.digitado2 {
+    position: absolute;
+    background: none;
+    margin-left: 235px;
+    margin-top: -20px;
+    text-align: center;
+    width: 30px;
+    font-size: 25pt;
+    border: 1px solid;
+}
+
+
+/* Branco e Inválido //////////////////////////////////////////*/
+.cliquebranco {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+.invalido {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+.digito-invalido {
+    margin-left: 100px;
+}
+
+.num-invalido {
+    margin-top: 100px;
+}
+
+/* Confirmar */
+.cliqueconfirma {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+.cliqueconfirma h1 {
+    font-size: 3em;
+}
+
+/* SUMIR ///////////////////////////////////////////////////////*/
+
+.sumir {
+    visibility: hidden;
+}
+
+/* Candidatos */
+.candidato {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+.text-candidato {
+    position: absolute;
+    margin-top: 40px;
+}
+
+.foto-candidato {
+    position: absolute;
+    align-self: flex-end;
+    top: 70px;
+    right: 10px;
+    width: 80px;
+    height: 110px;
+    border: 1px solid #242933;
+    padding: 5px;
+}
+.foto-vice {
+    position: absolute;
+    align-self: flex-end;
+    top: 190px;
+    right: 10px;
+    width: 80px;
+    height: 110px;
+    border: 1px solid #242933;
+    padding: 5px;
+}
+
+/* Animações ///////////////////////////////////////////////////////*/
+
+@keyframes piscar {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -15px) rotate(-1deg); }
+    20% { transform: translate(-5px, 0px) rotate(1deg); }
+    30% { transform: translate(25px, 15px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 15px) rotate(-1deg); }
+    60% { transform: translate(-25px, 1px) rotate(0deg); }
+    70% { transform: translate(25px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 15px) rotate(0deg); }
+    100% { transform: translate(1px, -15px) rotate(-1deg); }
+  }
+
+@keyframes brilhar {
+    0% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes angular {
+    0% { 
+        margin-top: 0px;
+        margin-left: 300px;
+         
+    }
+    5% {
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    50% {
+        margin-top: -0px;
+        margin-left: 0px;
+    }
+    95% { 
+        transform: rotate(360deg) translateX(180px) rotate(-360deg); 
+    }
+    100% {
+        margin-top: 0px;
+        margin-left: 120px;
+    }
+}
